@@ -1,0 +1,203 @@
+ /* Reset & Fonts */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+body {
+  background-color: #fff0f5;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #ff69b4;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+header .logo {
+  font-size: 1.8em;
+  font-weight: bold;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+header nav ul li a:hover {
+  color: #ffe4e1;
+}
+
+/* Hero Section */
+.hero {
+  background: url('https://images.pexels.com/photos/3018845/pexels-photo-3018845.jpeg') center/cover no-repeat;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  text-align: center;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  background-color:transparent(255, 105, 180, 0.5);
+}
+
+.hero-content {
+  position: relative;
+  color: white;
+  max-width: 700px;
+}
+
+.hero h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+.hero button {
+  background-color: #fff0f5;
+  color: #ff69b4;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.hero button:hover {
+  background-color: #ffb6c1;
+  color: white;
+}
+
+/* Articles Section */
+.articles {
+  padding: 50px;
+  text-align: center;
+}
+
+.articles h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #ff69b4;
+}
+
+.article-cards {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card h3 {
+  color: #ff1493;
+  padding: 15px;
+}
+
+.card p {
+  padding: 0 15px 15px 15px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+}
+
+/* About Section */
+.about {
+  padding: 50px;
+  background-color: #ffe4e1;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #ff69b4;
+}
+
+.about p {
+  font-size: 1.1em;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Subscribe Section */
+.subscribe {
+  padding: 50px;
+  text-align: center;
+}
+
+.subscribe input {
+  padding: 10px 15px;
+  width: 250px;
+  margin-right: 10px;
+  border: 1px solid #ff69b4;
+  border-radius: 5px;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  background-color: #ff69b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: #ff1493;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #ff69b4;
+  color: white;
+}
